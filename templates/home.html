@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div>
+<table>
+    <thead>
+
+    <tr>
+        <th>姓名</th>
+        <th>网址</th>
+    </tr>
+    </thead>
+    <thody>
+   {%  for users in myblog %}
+    <tr>
+       <td>{{ users.blog_username }}</td>
+        <td>{{ users.blog_link }}</td>
+
+    </tr>
+    {% endfor %}
+     </thody>
+</table>
+
+
+</div>
+
+<div>
+    <video src="http://jsyahua.xyz/xao/2.m3u8" controls="controls">
+your browser does not support the video tag
+</video>
+
+</div>
+</body>
+</html>
